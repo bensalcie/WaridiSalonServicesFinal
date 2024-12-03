@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Index - Impact Bootstrap Template</title>
+
+    {% load static %}
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="{% static 'style/assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'style/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'style/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'style/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'style/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'style/assets/vendor/glightbox/css/glightbox.min.css'% }" rel="stylesheet">
+    <link href="{% static 'style/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="{% static 'style/assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+<header id="header" class="header fixed-top">
+
+
+    <div class="topbar d-flex align-items-center">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:waridi@gmail.com">waridi@gmail.com</a></i>
+                <i class="bi bi-phone d-flex align-items-center ms-4"><span><a href="tel:254712345678">+254712345678</a>
+</span></i>
+            </div>
+            <div class="social-links d-none d-md-flex align-items-center">
+                <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-cente">
+
+        <div class="container position-relative d-flex align-items-center justify-content-between">
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <h1 class="sitename">WSS</h1>
+                <span>.</span>
+            </a>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home<br></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+
+<!--                    <li><a href="#portfolio">Portfolio</a></li>-->
+<!--                    <li><a href="#team">Team</a></li>-->
+<!--                    <li><a href="blog.html">Blog</a></li>-->
+<!--                    <li class="dropdown"><a href="#"><span>Dropdown</span> -->
+<!--                        <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--                        <ul>-->
+<!--                            <li><a href="#">Dropdown 1</a></li>-->
+<!--                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i-->
+<!--                                    class="bi bi-chevron-down toggle-dropdown"></i></a>-->
+<!--                                <ul>-->
+<!--                                    <li><a href="#">Deep Dropdown 1</a></li>-->
+<!--                                    <li><a href="#">Deep Dropdown 2</a></li>-->
+<!--                                    <li><a href="#">Deep Dropdown 3</a></li>-->
+<!--                                    <li><a href="#">Deep Dropdown 4</a></li>-->
+<!--                                    <li><a href="#">Deep Dropdown 5</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            <li><a href="#">Dropdown 2</a></li>-->
+<!--                            <li><a href="#">Dropdown 3</a></li>-->
+<!--                            <li><a href="#">Dropdown 4</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section accent-background">
+
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-5 justify-content-between">
+                <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <h2><span>Waridi Salon </span><span class="accent">Services</span></h2>
+                    <p>Waridi Salon Services where you feel born again after every service.</p>
+                    <div class="d-flex">
+                        <a href="#about" class="btn-get-started">Get Started</a>
+                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                           class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <img src="{% static 'style/assets/img/hero-img.svg' %}" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+            <div class="container position-relative">
+                <div class="row gy-4 mt-5">
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-easel"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">Exemplary Service</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-gem"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">Customer Focus</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">Better Pricing</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="icon-box">
+                            <div class="icon"><i class="bi bi-command"></i></div>
+                            <h4 class="title"><a href="" class="stretched-link">Timely Service</a></h4>
+                        </div>
+                    </div><!--End Icon Box -->
+
+                </div>
+            </div>
+        </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>About Us<br></h2>
+            <p>At Waridi Salon, we offer a comprehensive range of premium beauty and grooming services tailored to meet
+                your unique needs, both indoors and outdoors. Our indoor services include professional hair styling,
+                treatments, braiding, cutting, and coloring, as well as relaxing manicures, pedicures, facials, and
+                massages in a serene and welcoming environment. For your convenience, we also provide outdoor/mobile
+                services, bringing our skilled team and high-quality products to your location for events, weddings, or
+                personal appointments. Whether at our salon or the comfort of your home, Waridi Salon guarantees
+                exceptional care, professionalism, and a personalized touch to help you look and feel your best.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3></h3>
+                    <img src="https://www.shutterstock.com/image-photo/hairstylist-trimming-customer-39s-hair-600nw-2065702460.jpg" class="img-fluid rounded-4 mb-4" alt="">
+
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="content ps-0 ps-lg-5">
+
+
+
+                        <div class="position-relative mt-4">
+                            <img src="https://media.istockphoto.com/id/1321546822/photo/hair-stylist-in-brazil.jpg?s=612x612&w=0&k=20&c=BfSVBMziWbxxdr0R2jEXm6h1dtLqPwXvlUPPanPIGrQ=" class="img-fluid rounded-4" alt="">
+                            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                               class="glightbox pulsating-play-btn"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+        <div class="container">
+
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                            "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        },
+                        "breakpoints": {
+                            "320": {
+                                "slidesPerView": 2,
+                                "spaceBetween": 40
+                            },
+                            "480": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 60
+                            },
+                            "640": {
+                                "slidesPerView": 4,
+                                "spaceBetween": 80
+                            },
+                            "992": {
+                                "slidesPerView": 6,
+                                "spaceBetween": 120
+                            }
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gy-4 align-items-center">
+
+                <div class="col-lg-5">
+                    <img src="assets/img/stats-img.svg" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-7">
+
+<!--                    <div class="row gy-4">-->
+
+<!--                        <div class="col-lg-6">-->
+<!--                            <div class="stats-item d-flex">-->
+<!--                                <i class="bi bi-emoji-smile flex-shrink-0"></i>-->
+<!--                                <div>-->
+<!--                                    <span data-purecounter-start="0" data-purecounter-end="232"-->
+<!--                                          data-purecounter-duration="1" class="purecounter"></span>-->
+<!--                                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--                        <div class="col-lg-6">-->
+<!--                            <div class="stats-item d-flex">-->
+<!--                                <i class="bi bi-journal-richtext flex-shrink-0"></i>-->
+<!--                                <div>-->
+<!--                                    <span data-purecounter-start="0" data-purecounter-end="521"-->
+<!--                                          data-purecounter-duration="1" class="purecounter"></span>-->
+<!--                                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--                        <div class="col-lg-6">-->
+<!--                            <div class="stats-item d-flex">-->
+<!--                                <i class="bi bi-headset flex-shrink-0"></i>-->
+<!--                                <div>-->
+<!--                                    <span data-purecounter-start="0" data-purecounter-end="1453"-->
+<!--                                          data-purecounter-duration="1" class="purecounter"></span>-->
+<!--                                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--                        <div class="col-lg-6">-->
+<!--                            <div class="stats-item d-flex">-->
+<!--                                <i class="bi bi-people flex-shrink-0"></i>-->
+<!--                                <div>-->
+<!--                                    <span data-purecounter-start="0" data-purecounter-end="32"-->
+<!--                                          data-purecounter-duration="1" class="purecounter"></span>-->
+<!--                                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>&lt;!&ndash; End Stats Item &ndash;&gt;-->
+
+<!--                    </div>-->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+        <div class="container">
+            <img src="https://beautyinsider.sg/wp-content/uploads/2017/01/hair-lounge-salon.jpg" alt="">
+            <div class="content row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-xl-10">
+                    <div class="text-center">
+                        <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox play-btn"></a>
+                        <h3>Call our Customer Representative</h3>
+                        <p>Our customer care assistants are available 24/7 and can be found at any location accross Kenya. Click the buttom below to speak to any of our available assistants in Reatime.</p>
+                        <a class="cta-btn" href="#">Call Customer Assistant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="pedicure">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+
+
+            <h2>Our Services</h2>
+
+
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item  position-relative">
+                        <div class="icon">
+                            <i class="bi bi-activity"></i>
+                        </div>
+                        <h3>Braided Hairstyles</h3>
+                        <p>
+Knotless Braids Cornrows (straight backs, zigzag, or creative patterns) Fulani Braids Lemonade Braids Ghana Weaving Crochet Braids
+                        </p>
+                        <a href="{% url 'contact' %}" class="readmore stretched-link">RRequest Service <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-broadcast"></i>
+                        </div>
+                        <h3> Natural Hairstyles </h3>
+                        <p> Natural Hairstyles Twist Outs Bantu Knots Flat Twists Wash-and-Go Styling Afro Styles (picked-out, shaped, or tapered) Loc Maintenance (retwisting, styling, or starting new locs) Puff or Updo Styles </p>
+                        <a href="{% url 'contact' %}" class="readmore stretched-link">Request Service <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-easel"></i>
+                        </div>
+                        <h3>Haircuts Classic Cuts</h3>
+                        <p> (layered, blunt cuts, bobs) Pixie Cuts Undercuts Tapered Cuts for natural or textured hair Shags and Mullets (modern trends) </p>
+                        <a href="{% url 'contact' %}" class="readmore stretched-link">Request Service <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-bounding-box-circles"></i>
+                        </div>
+                        <h3> Weaves and Wigs Full Weave Installations</h3>
+                        <p>Weaves and Wigs Full Weave Installations Closure or Frontal Installations Wig Customization and Styling Lace Front Wig Application Sew-In or Glue-Free Weaves. </p>
+                        <a href="{% url 'contact' %}" class="readmore stretched-link">Request Service <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-calendar4-week"></i>
+                        </div>
+                        <h3>Updos and Event Styles Bridal</h3>
+                        <p>Updos and Event Styles Bridal and Wedding Hair (classic buns, vintage waves, half-up/half-down) Prom or Party Hairstyles Sleek Ponytails Chignons and French Twists </p>
+                        <a href="{% url 'contact' %}" class="readmore stretched-link">Request Service <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-chat-square-text"></i>
+                        </div>
+                        <h3> Relaxed or Straightened Styles Silk Press</h3>
+                        <p>Relaxed or Straightened Styles Silk Press Hair Relaxing and Texturizing Blowouts Flat Iron Styling..</p>
+                        <a href="{% url 'contact' %}" class="readmore stretched-link">Request Service <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Testimonials</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                    {
+                        "loop": true,
+                        "speed": 600,
+                        "autoplay": {
+                            "delay": 5000
+                        },
+                        "slidesPerView": "auto",
+                        "pagination": {
+                            "el": ".swiper-pagination",
+                            "type": "bullets",
+                            "clickable": true
+                        },
+                        "breakpoints": {
+                            "320": {
+                                "slidesPerView": 1,
+                                "spaceBetween": 40
+                            },
+                            "1200": {
+                                "slidesPerView": 3,
+                                "spaceBetween": 10
+                            }
+                        }
+                    }
+                </script>
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                            <h3>Sara Wilsson</h3>
+                            <h4>Designer</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                            <h3>Matt Brandon</h3>
+                            <h4>Freelancer</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                            <h3>John Larson</h3>
+                            <h4>Entrepreneur</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p>
+                                <i class="bi bi-quote quote-icon-left"></i>
+                                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                                <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section><!-- /Testimonials Section -->
+
+<!--    </section>&lt;!&ndash; /Portfolio Section &ndash;&gt;-->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Our Team</h2>
+            <p>We have a group of dedicated team who love what they do and they do what they love.</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8YEVVcNR1wJi6chUVsPIwnWS2Bsbni4oTpQ&s" class="img-fluid" alt="">
+                        <h4>Walter White</h4>
+                        <span>Web Development</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="https://images.seattletimes.com/wp-content/uploads/2022/01/01312022_stylist_162914.jpg?d=780x670" class="img-fluid" alt="">
+                        <h4>Sarah Jhinson</h4>
+                        <span>Marketing</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="https://st5.depositphotos.com/62628780/62388/i/450/depositphotos_623886736-stock-photo-brushes-makeup-black-woman-model.jpg" class="img-fluid" alt="">
+                        <h4>Sarah Keter</h4>
+                        <span>Salonist</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="https://media.istockphoto.com/id/464406020/photo/man-getting-his-hair-cut-at-barber-shop.jpg?s=612x612&w=0&k=20&c=WhVHbif5dDI0R8oFiBLMAK2nmhVIrO2HlCFPBYN-A-U=" class="img-fluid" alt="">
+                        <h4>Ben Salcie</h4>
+                        <span>Salonist</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="https://media.istockphoto.com/id/1444340541/photo/black-woman-afro-and-natural-beauty-lip-gloss-treatment-for-a-healthy-shiny-and-transparent.jpg?s=612x612&w=0&k=20&c=AczfwBXOpeDmCD-wN_d1aWBIVHKRe2xrgyHZu-Z8GEI=" class="img-fluid" alt="">
+                        <h4>Mirriam Ndanu</h4>
+                        <span>Salonist</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="https://tv-tokyo.imgix.net/txcms/media/plus_content/d6/fe/787ae29028777fec602b5aba961b.jpg?auto=format,compress&w=380" class="img-fluid" alt="">
+                        <h4>Mike Sonko</h4>
+                        <span>Cleaner</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpy7Dr3DMV4-GPzZhPyUODQT0TLDs5EDtn5w&s" class="img-fluid" alt="">
+                        <h4>Kasongo Luta</h4>
+                        <span>Massager</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member">
+                        <img src="https://thumbs.dreamstime.com/b/handsome-young-black-man-serious-expression-face-close-up-portrait-45080832.jpg" class="img-fluid" alt="">
+                        <h4>William Anderson</h4>
+                        <span>Content</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+                <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <div class="member">
+                        <img src="https://media.istockphoto.com/id/1497806504/photo/hair-styling-in-beauty-salon-woman-does-her-hair-in-modern-beauty-salon-woman-stylist-dries.jpg?b=1&s=612x612&w=0&k=20&c=C3dJVYJDDYX5W1x9rei5Zzkd8uQ8-Q-6xUmWrhDoMW8=" class="img-fluid" alt="">
+                        <h4>Amanda Jepson</h4>
+                        <span>Accountant</span>
+                        <div class="social">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div><!-- End Team Member -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Pricing</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                        <h3>Hair Services</h3>
+                        <div class="icon">
+                            <i class="bi bi-box"></i>
+                        </div>
+                        <h4><sup>KES</sup>1000<span> / Person</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span>Braiding</span></li>
+                            <li><i class="bi bi-check"></i> <span>Blow drying</span></li>
+                            <li><i class="bi bi-check"></i> <span>Dying</span></li>
+                            <li class="na"><i class="bi bi-x"></i> <span>Plaiting</span></li>
+                            <li class="na"><i class="bi bi-x"></i> <span>Weaving</span></li>
+                        </ul>
+                        <div class="text-center"><a href="{% url 'contact' %}" class="buy-btn">Request Service</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item featured">
+                        <h3>Manicure & Pedicure</h3>
+                        <div class="icon">
+                            <i class="bi bi-rocket"></i>
+                        </div>
+
+                        <h4><sup>KES</sup>2000<span> / person</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span>Nail Art</span></li>
+                            <li><i class="bi bi-check"></i> <span>Massage</span></li>
+                            <li><i class="bi bi-check"></i> <span>Morocan Bath</span></li>
+                            <li><i class="bi bi-check"></i> <span>Fake nails Removal</span></li>
+                            <li><i class="bi bi-check"></i> <span>Gel Application</span></li>
+                        </ul>
+                        <div class="text-center"><a href="{% url 'contact' %}" class="buy-btn">Request Service</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+                <div class="col-lg-4">
+                    <div class="pricing-item">
+                        <h3>Mobile Services</h3>
+                        <div class="icon">
+                            <i class="bi bi-send"></i>
+                        </div>
+                        <h4><sup>KES</sup>2500<span> / person</span></h4>
+                        <ul>
+                            <li><i class="bi bi-check"></i> <span>Manicure </span></li>
+                            <li><i class="bi bi-check"></i> <span>Pedicure</span></li>
+                            <li><i class="bi bi-check"></i> <span>Massage</span></li>
+                            <li><i class="bi bi-check"></i> <span>Nail Art</span></li>
+                            <li><i class="bi bi-check"></i> <span>Plaiting</span></li>
+                        </ul>
+                        <div class="text-center"><a href="{% url 'contact' %}" class="buy-btn">Request Service</a></div>
+                    </div>
+                </div><!-- End Pricing Item -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="content px-xl-5">
+                        <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+                        <p>
+                            Here you will get a list of frequently asked question
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="faq-container">
+                        <div class="faq-item faq-active">
+                            <h3><span class="num">1.</span> <span>Where do we find you?</span>
+                            </h3>
+                            <div class="faq-content">
+                                <p>You can find us in major cities in Kenya. Including Nairobi, Mombasa, Kisumu, Eldoret and Nakuru.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item faq-active">
+                            <h3><span class="num">2.</span> <span>How can we reach you?</span>
+                            </h3>
+                            <div class="faq-content">
+                                <p>You can email us on waridi@gmail.com or Call us on 0712345678 or Call our toll free line at +28837678829292</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span>
+                            </h3>
+                            <div class="faq-content">
+                                <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus
+                                    pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.
+                                    Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis
+                                    tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span>
+                            </h3>
+                            <div class="faq-content">
+                                <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum
+                                    velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend
+                                    donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in
+                                    cursus turpis massa tincidunt dui.</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                        <div class="faq-item">
+                            <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
+                            </h3>
+                            <div class="faq-content">
+                                <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in
+                                    est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
+                                    suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                            </div>
+                            <i class="faq-toggle bi bi-chevron-right"></i>
+                        </div><!-- End Faq item-->
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Recent Posts Section -->
+    <section id="recent-posts" class="recent-posts section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Recent Blog Posts</h2>
+            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div><!-- End Section Title -->
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <article>
+
+                        <div class="post-img">
+                            <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <p class="post-category">Politics</p>
+
+                        <h2 class="title">
+                            <a href="blog-details.html">Styles that we have proudly done.</a>
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/blog/blog-author.jpg" alt=""
+                                 class="img-fluid post-author-img flex-shrink-0">
+                            <div class="post-meta">
+                                <p class="post-author">Maria Doe</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">Jan 1, 2022</time>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div><!-- End post list item -->
+
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <article>
+
+                        <div class="post-img">
+                            <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <p class="post-category">Sports</p>
+
+                        <h2 class="title">
+                            <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/blog/blog-author-2.jpg" alt=""
+                                 class="img-fluid post-author-img flex-shrink-0">
+                            <div class="post-meta">
+                                <p class="post-author">Allisa Mayer</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">Jun 5, 2022</time>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div><!-- End post list item -->
+
+                <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <article>
+
+                        <div class="post-img">
+                            <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                        </div>
+
+                        <p class="post-category">Entertainment</p>
+
+                        <h2 class="title">
+                            <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                            <img src="assets/img/blog/blog-author-3.jpg" alt=""
+                                 class="img-fluid post-author-img flex-shrink-0">
+                            <div class="post-meta">
+                                <p class="post-author">Mark Dower</p>
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">Jun 22, 2022</time>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div><!-- End post list item -->
+
+            </div><!-- End recent posts list -->
+
+        </div>
+
+    </section><!-- /Recent Posts Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Contact</h2>
+            <p> To get our services you can contact us through:</p>
+        </div><!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="row gx-lg-0 gy-4">
+
+                <div class="col-lg-4">
+                    <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>A1 Wiper Street, Misheveve,535022</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bi bi-telephone flex-shrink-0"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+2547 1234 5678</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h3>Email Us</h3>
+                                <p>waridisalon@gmail.com</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                        <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                            <i class="bi bi-clock flex-shrink-0"></i>
+                            <div>
+                                <h3>Open Hours:</h3>
+                                <p>Mon-Sat: 10AM - 10PM</p>
+                            </div>
+                        </div><!-- End Info Item -->
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8">
+                    <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade"
+                          data-aos-delay="100">
+                        <div class="row gy-4">
+
+                            <div class="col-md-6">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email"
+                                       required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject"
+                                       required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="8" placeholder="Message"
+                                          required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Loading</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                                <button type="submit">Send Message</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div><!-- End Contact Form -->
+
+            </div>
+
+        </div>
+
+    </section><!-- /Contact Section -->
+
+</main>
+
+<footer id="footer" class="footer accent-background">
+
+    <div class="container footer-top">
+        <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <span class="sitename">WSS</span>
+                </a>
+                <p></p>
+                <div class="social-links d-flex mt-4">
+                    <a href=""><i class="bi bi-twitter-x"></i></a>
+                    <a href=""><i class="bi bi-facebook"></i></a>
+                    <a href=""><i class="bi bi-instagram"></i></a>
+                    <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+<!--                    <li><a href="#">Terms of service</a></li>-->
+<!--                    <li><a href="#">Privacy policy</a></li>-->
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Graphic Design</a></li>
+                </ul>
+            </div>
+
+<!--            <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">-->
+<!--                <h4>Contact Us</h4>-->
+<!--                <p>A1 Wiper Street</p>-->
+<!--                <p> Misheveve,535022</p>-->
+<!--                <p>Kenya</p>-->
+<!--                <p class="mt-4"><strong>Phone:</strong> <span>+2547 1234 5678</span></p>-->
+<!--                <p><strong>Email:</strong> <span>waridisalon@gmail.com</span></p>-->
+<!--            </div>-->
+
+        </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">WSS</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://charity.com/">Charity Muia</a>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'style/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'style/assets/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'style/assets/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'style/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'style/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'style/assets/vendor/purecounter/purecounter_vanilla.js' % }"></script>
+<script src="{% static 'style/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js' %}"></script>
+<script src="{% static 'style/assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+
+<!-- Main JS File -->
+<script src="{% static 'style/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
